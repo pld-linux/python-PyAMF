@@ -9,7 +9,7 @@ Summary:	Action Message Format (AMF) support for Python
 Summary(pl.UTF-8):	Wsparcie dla Action Message Format (AMF)
 Name:		python-%{module}
 Version:	0.6.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/Python
 # http://pypi.python.org/packages/source/P/PyAMF/PyAMF-0.6.1.tar.gz
@@ -65,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 # %doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
 %dir %{py_sitedir}/cpyamf
 %attr(755,root,root) %{py_sitedir}/cpyamf/*.so
-%attr(755,root,root) %{py_sitedir}/cpyamf/__init__.*
+%{py_sitedir}/cpyamf/__init__.*
 %{py_sitedir}/pyamf
 %if "%{py_ver}" > "2.4"
 %{py_sitedir}/%{module}-%{version}-*.egg-info
