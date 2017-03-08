@@ -4,20 +4,20 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 
-%define 	module	PyAMF
+%define		module	PyAMF
 Summary:	Action Message Format (AMF) support for Python
 Summary(pl.UTF-8):	Wsparcie dla Action Message Format (AMF)
 Name:		python-%{module}
-Version:	0.6.1
-Release:	3
+Version:	0.8.0
+Release:	1
 License:	MIT
 Group:		Development/Languages/Python
 # http://pypi.python.org/packages/source/P/PyAMF/PyAMF-0.6.1.tar.gz
-Source0:	http://pypi.python.org/packages/source/P/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	5ee33463974f37dfb5a043b5b773039f
+Source0:	https://pypi.python.org/packages/a0/06/43976c0e3951b9bf7ba0d7d614a8e3e024eb5a1c6acecc9073b81c94fb52/%{module}-%{version}.tar.gz
+# Source0-md5:	51e810531a663b55e686286edb23e82a
 URL:		http://www.pyamf.org/index.html
 BuildRequires:	python-devel
-BuildRequires:	python-distribute
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 # if py_postclean is used
 BuildRequires:	rpmbuild(macros) >= 1.710
