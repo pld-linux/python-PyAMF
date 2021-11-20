@@ -9,7 +9,7 @@ Summary:	Action Message Format (AMF) support for Python
 Summary(pl.UTF-8):	Wsparcie dla Action Message Format (AMF)
 Name:		python-%{module}
 Version:	0.8.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/Python
 # http://pypi.python.org/packages/source/P/PyAMF/PyAMF-0.6.1.tar.gz
